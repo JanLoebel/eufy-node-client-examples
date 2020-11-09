@@ -1,0 +1,21 @@
+{
+  "name": "eufy-node-client-examples",
+  "version": "0.1.0",
+  "description": "Showing how to use eufy-node-client.",
+  "scripts": {
+    "start": "nodemon src/index.ts",
+    "check:version": "npx npm-check-updates"
+  },
+  "author": "Jan Löbel",
+  "license": "MIT",
+  "nodemonConfig": {
+    "ignore": [
+      "credentials.json"
+    ]
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "eufy-node-client": "^0.0.1"
+  },
+  "devDependencies": {}
+}
