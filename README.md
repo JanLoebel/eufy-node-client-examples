@@ -7,6 +7,9 @@ This repository shows how to use the [eufy-node-client](https://github.com/JanLo
 # Clone the repository
 git clone https://github.com/JanLoebel/eufy-node-client-examples
 
+# Change into the cloned directory
+cd eufy-node-client-examples
+
 # Install dependencies
 npm install
 
