@@ -43,6 +43,11 @@ To receive push notifications we have to simulate an android device and register
 
 Execute: `node examples/push-logging/index.js` 
 
+### push-mqtt
+This example shows how to forward received push messages to a simple mqtt-broker like `eclipse-mosquitto`. Afterwards you can consume this message with another client (e.g. nodered / iobroker / ...). Please provide the mqtt-broker-url in your `.env`-file. Most of the code is equal to the `push-logging`-example.
+
+Execute: `node examples/push-mqtt/index.js` 
+
 ## FAQ
 
 - Does it work also with `eufy (any product name)`?

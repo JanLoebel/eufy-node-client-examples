@@ -14,8 +14,10 @@
     ]
   },
   "dependencies": {
+    "async-mqtt": "^2.6.1",
     "dotenv": "^8.2.0",
-    "eufy-node-client": "^0.2.0"
+    "eufy-node-client": "^0.3.1",
+    "mqtt": "^4.2.5"
   },
   "devDependencies": {}
 }
