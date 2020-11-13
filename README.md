@@ -31,8 +31,17 @@ Take that values and enter them into the `.env`-file.
 ### http-read-data
 This example shows how to create the `HttpClient` and calling methods on it. This special examples prints all needed information to start a peer-2-peer connection (see: `p2p-local`).
 
+Execute: `node examples/http-read-data/index.js` 
+
 ### p2p-local
 In the same network as the base station we can create a `DeviceClientService` after resolving the port with the `LocalLookupService`. With this p2p-connection we can send commands to the base station. In the example we're changing the arm-mode to `HOME`.
+
+Execute: `node examples/p2p-local/index.js` 
+
+### push-logging
+To receive push notifications we have to simulate an android device and register at FCM/GCM. We should only register once, so the example saves registered credentials and is reusing them on rerun. After we have credentials we can start listening on FCM/GCM and tell eufy to send push notifications for your account to this credentials.
+
+Execute: `node examples/push-logging/index.js` 
 
 ## FAQ
 
