@@ -45,9 +45,12 @@ const main = async () => {
   await httpService.registerPushToken(fcmToken);
   console.log('Registered at eufy with:', fcmToken);
 
+  await sleep(5000);
+  await httpService.pushTokenCheck();
+
   setInterval(async () => {
     await httpService.pushTokenCheck();
-  }, 30 * 1000);
+  }, 5 * 60 * 1000);
 };
 
 main();
