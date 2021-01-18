@@ -38,6 +38,11 @@ In the same network as the base station we can create a `DeviceClientService` af
 
 Execute: `node examples/p2p-local/index.js` 
 
+### p2p-local-cloud-lookup
+Some users have reported that the `p2p-local` does not work and does not find any local ip address. So you could try the `CloudLookupService` which calls the cloud services of eufy to request the ip. Normally that services response with two ips, one global/internet based one and the local ip. So after we retrieved the addresses we try to find the local one and do the same with the `p2p-local` script.
+
+Execute: `node examples/p2p-local-cloud-lookup/index.js` 
+
 ### push-logging
 To receive push notifications we have to simulate an android device and register at FCM/GCM. We should only register once, so the example saves registered credentials and is reusing them on rerun. After we have credentials we can start listening on FCM/GCM and tell eufy to send push notifications for your account to this credentials.
 
