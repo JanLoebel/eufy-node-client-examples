@@ -20,9 +20,11 @@ const main = async () => {
     if (!!result) {
       const devClientService = new DeviceClientService(address, P2P_DID, ACTOR_ID);
       await devClientService.connect();
+      console.log('Connected!');
 
       // CMD_SET_ARMING  # 0 => away 1 => home, 2 => schedule, 63 => disarmed
       devClientService.sendCommandWithInt(CommandType.CMD_SET_ARMING, 1);
+      console.log('Sended command...');
     } else {
       console.error('Found addresses do not contain any private address to start P2P...');
     }

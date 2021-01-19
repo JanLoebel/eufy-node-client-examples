@@ -16,9 +16,11 @@ const main = async () => {
 
   const devClientService = new DeviceClientService(address, P2P_DID, ACTOR_ID);
   await devClientService.connect();
+  console.log('Connected!');
 
   // CMD_SET_ARMING  # 0 => away 1 => home, 2 => schedule, 63 => disarmed
   devClientService.sendCommandWithInt(CommandType.CMD_SET_ARMING, 1);
+  console.log('Sended command...');
 };
 
 main();
